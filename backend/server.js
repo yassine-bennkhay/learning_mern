@@ -1,5 +1,4 @@
 const express = require("express");
-const { use } = require("./routes/goalRoutes");
 const { errorHandler } = require("./middleWare/errorMiddleware");
 const dotenv = require("dotenv").config();
 const port = process.env.PORT || 5000;

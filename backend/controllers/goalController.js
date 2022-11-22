@@ -8,6 +8,7 @@ const getGoals = asyncHandler(async (req, res) => {
     goal_name: "read a bit of design patterns",
     goal_time: "today at night",
     duration: "1 hour",
+    endtime: "20-03-2024",
   };
   res.status(200).json(dummydata);
   res.end();

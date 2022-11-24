@@ -9,5 +9,5 @@ const {
 
 router.route("/").get(getGoals).post(setGoal);
 router.route("/:id").put(updateGoal).delete(deleteGoal);
-router.get('/',getGoals)
+//router.get('/',getGoals)
 module.exports = router

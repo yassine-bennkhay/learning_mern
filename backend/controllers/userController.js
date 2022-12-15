@@ -71,7 +71,12 @@ const generateToken = (id) => {
   });
 };
 const getMe = asyncHandler(async (req, res) => {
-  res.status(200).json({ message: "User data" });
+  const{_id,name,email}=await User.findById(req.user.id)
+  res.status(200).json({
+    id:_id,
+    name,
+    email,
+  })
 });
 module.exports = {
   registerUser,

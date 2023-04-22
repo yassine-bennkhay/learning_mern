@@ -16,8 +16,7 @@ app.use("/api/update/goal", require("./routes/goalRoutes"));
 app.use("/api/delete/goal", require("./routes/goalRoutes"));
 //user endpoint
 app.use("/api/users", require("./routes/userRoutes"));
-app.use("/api/users",require('./routes/userRoutes'));
-app.use("/api/users",require('./routes/userRoutes'));
+
 
 app.use(errorHandler);
 app.listen(port, () => console.log(`Server started on port ${port}`));
